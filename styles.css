@@ -1,0 +1,77 @@
+* {
+  margin-top: 0;
+  box-sizing: content-box;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  padding-bottom: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+
+}
+
+a:hover {
+  background-color: #E8D0C6;
+  color: #843b62;
+  border-radius: 8px;
+}
+
+.headerlink1,
+.headerlink2 {
+  padding: 6px 40px;
+}
+
+
+body {
+  font-family: 'Gentium Book Plus', serif;
+  margin: 0;
+  overflow: hidden;
+}
+
+main {
+  background: linear-gradient(to right, #ffb997, #843b62);
+  padding: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100%;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+p {
+  padding-bottom: 30px;
+  padding-top: 5px;
+  color: #5e1616;
+  font-size: 19px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+button {
+  background-color: rgb(245, 193, 147);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-right: 20px;
+  cursor: grab;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.mainlink:hover {
+  padding: 6px 25px;
+}
