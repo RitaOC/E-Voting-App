@@ -1,3 +1,13 @@
+let edward = 10
+let elon = 0
+
+
+if (edward > elon) {
+  color = 'red'
+} else {
+  color = 'blue'
+}
+
 var simplemaps_usmap_mapdata = {
   main_settings: {
     //General settings
@@ -8,7 +18,7 @@ var simplemaps_usmap_mapdata = {
 
     //State defaults
     state_description: "State description",
-    state_color: "#88A4BC",
+    state_color: "blue",
     state_hover_color: "#3B729F",
     state_url: "https://simplemaps.com",
     border_size: 1.5,
@@ -384,8 +394,9 @@ var simplemaps_usmap_mapdata = {
     },
     AZ: {
       name: "Arizona",
-      description: "default",
-      color: "default",
+      description: "Edward: " + edward + " , "
+        + "Elon: " + elon,
+      color: color,
       hover_color: "default",
       url: "default"
     },
