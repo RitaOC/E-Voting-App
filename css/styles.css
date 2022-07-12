@@ -1,0 +1,142 @@
+* {
+  margin-top: 0;
+  box-sizing: content-box;
+  padding: 0;
+}
+
+html,
+body {
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+
+}
+
+.headerlink1:hover,
+.headerlink2:hover {
+  background-color: #E8D0C6;
+  color: #843b62;
+  border-radius: 8px;
+  padding: 6px 30px;
+  transition: 0.8s;
+}
+
+.headerlink1,
+.headerlink2 {
+  padding: 20px 40px;
+}
+
+
+body {
+  font-family: 'Gentium Book Plus', serif;
+  margin: 0;
+  overflow: hidden;
+}
+
+main {
+  background: linear-gradient(to right, #ffb997, #843b62);
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.section1 {
+  background-color: #E8D0C6;
+  width: 100%;
+  padding: 50px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+p {
+  padding-bottom: 30px;
+  padding-top: 5px;
+  color: #5e1616;
+  font-size: 19px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+button {
+  width: 100%;
+  background-color: rgb(245, 193, 147);
+  border: none;
+  padding: 10px 50px;
+  border-radius: 20px;
+  margin-right: 20px;
+  cursor: grab;
+  position: relative;
+}
+
+button::before {
+  content: " ";
+  position: absolute;
+  inset: 0;
+  transform: scaleX(0);
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff55;
+  border-radius: 100px;
+}
+
+button:hover::before {
+  animation: ripple 0.9s;
+  /* cubic-bezier(0.23, 1, 0.32, 1); */
+}
+
+@keyframes ripple {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* button:hover { */
+/* opacity: 0.8; */
+/* } */
+
+.mainlink:hover {
+  padding: 6px 25px;
+}
+
+/*Responsive for mobile*/
+@media screen and (max-width:620px) {
+  main {
+    padding: 50px;
+    padding-bottom: 100%;
+  }
+
+  button:active::before {
+    animation: ripple 0.9s;
+    /* cubic-bezier(0.23, 1, 0.32, 1); */
+  }
+
+  .section1 {
+    width: 70%;
+  }
+
+  button {
+    width: 70%;
+  }
+}
