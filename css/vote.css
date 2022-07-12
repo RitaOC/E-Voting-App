@@ -1,9 +1,16 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-.map{
+.map {
     max-width: 700px;
+    display: flex;
+    align-items: center;
+}
+
+.vote-nav-bar {
+    background: linear-gradient(to right, #ffb997, #843b62);
+    padding: 30px;
 }
