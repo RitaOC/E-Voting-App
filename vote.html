@@ -5,11 +5,13 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8">
 	<title>vote</title>
+	<!-- Stylesheet -->
 	<link rel="stylesheet" href="css/vote.css">
-	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="">
-	<script src="mapdata.js"></script>
-	<script src="usmap.js"></script>
+	<!-- <link rel="stylesheet" href="css/styles.css"> -->
+	<!-- Js link -->
+	<script src="JS/mapdata.js"></script>
+	<script src="JS/usmap.js"></script>
+	<script src="JS/vote.js"></script>
 </head>
 
 <body>
@@ -20,13 +22,88 @@
 		</nav>
 	</header>
 	<div>
-		<h1>HTML5/JavaScript Map</h1>
+		<h1 class="map-title">US Map</h1>
 		<div class="map">
 			<!-- Keep map above fold -->
 			<div id="map"></div>
 		</div>
-		<div>Please read the <a href="http://simplemaps.com/docs">documentation</a> to learn how to customize this map.
+		<div class="voters-choice">
+			<h2>Cast your Vote</h2>
+			<div class="state-selection">
+				<p>Select State:</p>
+				<select name="select State" id="">
+					<option value="">New Hampshire</option>
+					<option value="">Hawaii</option>
+					<option value="">Alaska</option>
+					<option value="">Florida</option>
+					<option value="">Vermont</option>
+					<option value="">Maine</option>
+					<option value="">Rhode Island</option>
+					<option value="">New York</option>
+					<option value="">Pennslyvania</option>
+					<option value="">New Jersey</option>
+					<option value="">Delaware</option>
+					<option value="">Maryland</option>
+					<option value="">Virginia</option>
+					<option value="">West Virginia</option>
+					<option value="">Ohio</option>
+					<option value="">Indiana</option>
+					<option value="">Illinois</option>
+					<option value="">Connecticut</option>
+					<option value="">Wisconsin</option>
+					<option value="">North Carolina</option>
+					<option value="">District of Columbia</option>
+					<option value="">Massachusett</option>
+					<option value="">Tennessee</option>
+					<option value="">Arkansas</option>
+					<option value="">Missouri</option>
+					<option value="">Georgia</option>
+					<option value="">South Carolina</option>
+					<option value="">Kentucky</option>
+					<option value="">Alabama</option>
+					<option value="">Louisiana</option>
+					<option value="">Mississippi</option>
+					<option value="">Iowa</option>
+					<option value="">Minnesota</option>
+					<option value="">Oklahoma</option>
+					<option value="">Texas</option>
+					<option value="">New Mexico</option>
+					<option value="">Kansas</option>
+					<option value="">Nebraska</option>
+					<option value="">South Dakota</option>
+					<option value="">North Dakota</option>
+					<option value="">Wyoming</option>
+					<option value="">Montana</option>
+					<option value="">Colorado</option>
+					<option value="">Utah</option>
+					<option value="">Arizona</option>
+					<option value="">Nevada</option>
+					<option value="">Oregon</option>
+					<option value="">Washington</option>
+					<option value="">California</option>
+					<option value="">Michigan</option>
+					<option value="">Idaho</option>
+					<option value="">Guam</option>
+					<option value="">Puerto Rico</option>
+					<option value="">Virgin Islands</option>
+					<option value="">American Samoa</option>
+					<option value="">Northern Mariana Islands</option>
+				</select>
+			</div>
+
+			<div id="contestants-imgs">
+				<input type="radio" name="vote" id="elonsVote" onclick="elonsClick()">
+				<input type="image" id="elonsImg" src="images/Elon-Musk-2010.webp" alt="elon's picture">
+				<!-- <img onclick="elon()" id="elon-img" src="images/Elon-Musk-2010.webp" alt="elon's picture" srcset=""> -->
+				<input type="radio" name="vote" class="edwardsVote" onclick="edwardsClick()">
+				<input id="edwardsImg" type="image" src="images/edward.jpeg" alt="">
+				<!-- <img src="images/edward.jpeg" alt=""> -->
+			</div>
+			<button id="btn-vote" onclick="vote()">Vote</button>
 		</div>
+
+		<!-- <div>Please read the <a href="http://simplemaps.com/docs">documentation</a> to learn how to customize this map. -->
+	</div>
 	</div>
 </body>
 
